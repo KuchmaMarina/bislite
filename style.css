@@ -2,7 +2,9 @@ body {
 	font-family: arial;
 	margin: 0;
 	background-color: #e8ebf1;
+	transform: translateY(0px) !important;
 }
+
 	.Bwrappers {
 		max-width: 1000px;
 		margin: 0 auto;
@@ -13,6 +15,10 @@ body {
 			content: "";
 			display: block;
 			clear: both;
+		}
+		.Bwrappers ul{
+			list-style: none;
+			padding: 0;
 		}
 
 	.nav {
@@ -45,7 +51,7 @@ body {
 				color: black;
 			}
 
-		ul.subnav {
+ul.subnav {
 			display: none;
 		    position: absolute;
 		    width: 200px;
@@ -55,11 +61,14 @@ body {
 		    font-weight: 700;
 			line-height: 20px;
 		    background-color: white;
+			padding-left: 0;
 		   }
 
 					ul.subnav > li {
 					    display: block;
 					    border-bottom: 1px solid lightgray;
+						margin-left: 6px;
+						margin-right: 6px;
 					}
 
 					ul.subnav > li .smiley {
@@ -95,7 +104,7 @@ body {
 					    right: 0;
 					}
 
-					}
+
 					ul.subnav > li > a {
 					    display: block;
 					    padding: 10px;
@@ -117,21 +126,30 @@ body {
 			content: "\25be";
 			display: inline;
 			clear: both;
-			outline-width: 700;
+			outline-width: 700px;
 			padding-left: 10px;
 			padding-bottom: 20px;
-		} 
+		}
+		.select-menu:hover .downarrow{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			border-top: 3px solid #2aacc8;
+			color: #2aacc8;
+			background-color: white;
+		}
 
 	.logotype {
 		margin-top: 40px;
-		font-size: 50px;
-		line-height: 20px;
-		font-family: Lato;
 		font-weight: 900;
-		color: black;
 	}
+.logotype p{
+	font-size: 50px !important;
+	color: black;
+	line-height: 20px;
 
-span {
+}
+
+.logotype span {
 	color: #2aacc8;
 	font-weight: 400;
 	vertical-align: top;
@@ -140,22 +158,25 @@ span {
 	.foil {
 		background-color: #81e4ed;
 		padding-top: 20px;
-		padding-bottom: 20px;
 		height: 100%;
 	}
+.foil_img{
+	background-color: #dd5835;
+	margin: 0 auto;
+	width: 1000px;
+}
 			.foil img  {
-				background-color: #dd5835;
 				display: block;
-				margin: 0 auto;
-				max-width: 1000px;
+				margin-left: 61px;
 			}
 			.foil ul {
 				text-align: center;
+				margin: 11px auto;
 			}
 
 			.foil li {
 				display: inline-block;
-				margin: 20px 10px 0;
+				margin: 0px 10px 0;
 			}
 
 			.foil a {
@@ -171,21 +192,23 @@ span {
 			}
 
 			.next {
-				padding: 30px;
+				padding: 15px 30px;
+				display: flex;
+				justify-content: space-between;
 			}
 
 			.next > div  {
-				display: inline-block;
 				width: 23%;
-				margin: 5px;
+				margin: 0px 0px 35px;
 				vertical-align: top;
 			}
 
 			.next h6 {
 				font-size: 15px;
 				font-weight: 700;
-				line-height: 20px;
+				line-height: 35px;
 				text-transform: uppercase;
+				margin-bottom: 20px;
 			}
 
 			.next h6:before {
@@ -198,7 +221,6 @@ span {
 				background-position: center;
 				margin-right: 5%;
 				vertical-align: top;
-				margin-bottom: 5%;
 			}
 
 			h6.pencil:before {
@@ -226,13 +248,15 @@ span {
 			font-weight: 400;
 			line-height: 20px;
 			color: #363636;
-			padding-bottom: 20px;
-			height: 120px;
+			margin: 0 auto;
+			padding-bottom: 25px;
 			overflow: hidden;
+
 		}
 
 		.next a {
 			color: #2aacc8;
+			text-decoration: none;
 		}
 
 		.next a:before {
@@ -256,8 +280,10 @@ span {
 		padding: 15px 0;
 	}
 
+
 		.latest ul {
 			float: right;
+			margin: 0;
 		}
 
 			.latest li {
@@ -283,10 +309,13 @@ span {
 			.latest h6 {
 				width: 200px;
 				display: inline;
+				font-size: 15px;
 			}
 
 		.pic {
 			text-align: center;
+			display: flex;
+			justify-content: space-between;
 		}
 
 		.gallery {
@@ -337,7 +366,7 @@ span {
 hr {
 	color: lightgray;
 	max-width: 1000px;
-	margin-bottom: 10px;
+	margin: 0 auto 5px;
 	}
 	
 	.person {
@@ -373,6 +402,13 @@ hr {
 				background-repeat: no-repeat;
 				clear: both;
 			}
+			.clientsicon{
+				margin-left: 15px;
+			}
+			.clientsicon img{
+				width: 162px;
+				height: 102px;
+			}
 
 		.person p {
 			font-size: 14px;
@@ -380,11 +416,11 @@ hr {
 			font-weight: 400;
 			line-height: 24px;
 			color: #363636;
-			padding: 25px 25px 0 0;
 		}
 			.person p:last-child {
 				font-weight: 700;
 				font-style: italic;
+				margin-top: 19px;
 			}
 
 		.person div {
@@ -406,13 +442,15 @@ hr {
 			font-weight: 400;
 			line-height: 26px;
 			display: inline-block;
-			padding: 30px;
-
+			margin-top: 35px;
+			margin-left: 28px;
 		}
 
 		.download b {
 			display: inline-block;
 			color: #0d0707;
+			margin-top: -62px;
+			margin-left: 85px;
 			font-weight: 700;
 			line-height: 60px;
 			text-transform: uppercase;
@@ -443,14 +481,16 @@ hr {
 			font-size: 18px;
 			font-weight: 700;
 			text-transform: uppercase;
+			text-decoration: none;
 		}
 
 footer {
 	text-align: justify;
+	display: flex;
+	justify-content: space-between;
 }
 
 	footer > div {
-		display: inline-block;
 		width: 14%;
 		vertical-align: top;
 		padding: 30px 0;
@@ -465,9 +505,13 @@ footer {
 			}
 
 		footer > div:last-child {
-				width: 22%;
-				text-align: center;
+				width: 20%;
+			margin-right: -20px;
+			text-align: center;
 			}
+		footer>div img{
+			margin-right: 8px;
+		}
 
 	footer > div > h6 {
 		color: black;
@@ -485,10 +529,11 @@ footer {
 		font-weight: 400;
 		line-height: 20px;
 		text-align: left;
+		margin: 0;
 	}
 
 	footer > div .end {
-		margin-top: 25px;
+		margin-top: 20px;
 	}
 
 	footer > div > ul > li > a {
@@ -505,7 +550,12 @@ footer {
 	}
 
 .finish {
-	margin-bottom: 30px;
+
+}
+.finish{
+margin-top: 0;
+	display: flex;
+	margin-bottom: 42px;
 }
 
 	.finish p {
@@ -516,6 +566,7 @@ footer {
 		line-height: 20px;
 		text-align: left;
 		float: left;
+		margin: 0;
 	}
 
 	.finish a {
@@ -527,3 +578,14 @@ footer {
 		display: inline-block;
 		clear: both;
 	}
+	.logotype-footer p{
+		font-size: 50px !important;
+		color: black;
+		line-height: 20px;
+
+	}
+
+.logotype-footer span {
+	color: #2aacc8;
+	vertical-align: top;
+}
